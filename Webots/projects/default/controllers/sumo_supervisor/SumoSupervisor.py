@@ -557,7 +557,7 @@ class SumoSupervisor (Supervisor):
                 time.sleep(0.5)  # check every 0.5s
 
         # start watcher thread
-        # threading.Thread(target=watch_dest_file, args=("C:\\Users\\ACER\\Documents\\CS\\Multimodal Interaction\\new_dest.txt", dest_queue), daemon=True).start()
+        # threading.Thread(target=watch_dest_file, args=("new_dest.txt", dest_queue), daemon=True).start()
 
         # try:
         #     vehicle_id = "0"
@@ -1182,7 +1182,7 @@ class SumoSupervisor (Supervisor):
 
         
         # start watcher thread and destination processor thread
-        dest_file = "C:\\Users\\ACER\\Documents\\CS\\Multimodal Interaction\\new_dest.txt"
+        dest_file = "new_dest.txt"
         # Ensure the file exists and is empty initially
         try:
             with open(dest_file, "w") as f:
